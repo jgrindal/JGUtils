@@ -8,9 +8,9 @@ def parse_args():
                         help='Directory for things to be renamed')
     parser.add_argument('--pattern', type=str, required=False, default='*',
                         help='pattern to choose')
-    parser.add_argument('--prefix', type=str, required=False,
+    parser.add_argument('--prefix', type=str, required=False, default='',
                         help='prefix to add to the filename')
-    parser.add_argument('--postfix', type=str, required=False,
+    parser.add_argument('--postfix', type=str, required=False, default='',
                         help='postfix to add to the filename')
     return parser.parse_args()
 
