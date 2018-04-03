@@ -4,7 +4,7 @@ import glob, os, argparse
 def parse_args():
     parser = argparse.ArgumentParser(
         description='Batch Renamer')
-    parser.add_argument('--dir', type=str, required=True, default='../test',
+    parser.add_argument('--dir', type=str, required=True, default='./',
                         help='Directory for things to be renamed')
     parser.add_argument('--pattern', type=str, required=False, default='*',
                         help='pattern to choose')
